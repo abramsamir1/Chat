@@ -1,15 +1,12 @@
-//import liraries
 import React, { Component } from 'react';
 import { View, Text, StyleSheet, TextInput, FlatList,
-    Platform, Keyboard,ActivityIndicator,
+    Platform, Keyboard, ActivityIndicator,
     TouchableHighlight, KeyboardAvoidingView } from 'react-native';
 import { Header } from 'react-native-elements';
 import { connect } from 'react-redux';
 import { sendMessage, fetchMessges } from '../Actions';
-
 import ChatItem from './ChatItem';
 
-// create a component
 class Chat extends Component {
     constructor() {
         super();
@@ -105,7 +102,7 @@ class Chat extends Component {
     }
 }
 
-// define your styles
+
 const styles = StyleSheet.create({
     container: {
         flex: 1
@@ -151,5 +148,4 @@ const mapStateToProps = state => {
     }
 }
 
-//make this component available to the app
 export default connect(mapStateToProps, { sendMessage, fetchMessges } )(Chat);

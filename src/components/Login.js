@@ -1,11 +1,11 @@
-//import liraries
+
 import React, { Component } from 'react';
 import { View, ActivityIndicator, StyleSheet } from 'react-native';
 import { FormLabel, FormInput, Header, Button } from 'react-native-elements'
 import { connect } from 'react-redux';
 import { login } from '../Actions';
 
-// create a component
+
 class Login extends Component {
     constructor() {
         super();
@@ -77,7 +77,7 @@ class Login extends Component {
     }
 }
 
-// define your styles
+
 const styles = StyleSheet.create({
     container: {
         flex: 1

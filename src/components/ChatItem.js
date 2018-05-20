@@ -1,10 +1,9 @@
-//import liraries
+
 import React, { Component } from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 import { Avatar } from 'react-native-elements';
 import { connect } from 'react-redux';
 
-// create a component
 class ChatItem extends Component {
 
     showAvatarOrNoT(message) {
@@ -36,7 +35,6 @@ class ChatItem extends Component {
     }
 }
 
-// define your styles
 const styles = StyleSheet.create({
     messageContainer: {
         flexDirection: 'row',
@@ -74,5 +72,5 @@ const mapStateToProps = state => {
         user: state.auth.user
     }
 }
-//make this component available to the app
+
 export default connect(mapStateToProps)(ChatItem);
